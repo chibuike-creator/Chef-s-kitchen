@@ -120,11 +120,13 @@ ul li a:hover{
 .buttons a:first-child button:hover{
     background-color: red;
     color: white;
+    cursor: pointer;
 }
 
 .buttons a:last-child button:hover{
     background-color: antiquewhite;
     color: red;
+    cursor: pointer;
 }
 
 .burger i{
@@ -162,9 +164,7 @@ ul li a:hover{
     font-size: 1.2rem;
     margin:1em 0;
 }
-.hero-button{
 
-}
 .hero-button a{
     text-decoration: none;
 }
@@ -184,8 +184,17 @@ ul li a:hover{
 .hero-button a:last-child button{
     background: none;
     border: 1px solid #df6853;
-    color: #df6853;
-    
+    color: #df6853;   
+}
+
+.hero-button a:first-child button:hover{
+    background-color: white;
+    color: #DF6853;
+}
+
+.hero-button a:last-child button:hover{
+      background-color: #df6853;
+      color: white;
 }
 
 .hero-img{
@@ -223,7 +232,6 @@ ul li a:hover{
 
 .features-text{
     text-align: center;
-
 }
 
 .features-text p{
@@ -282,7 +290,6 @@ ul li a:hover{
 .cook-padding{
     margin-top: 8rem;
     padding: 0 3rem;
-
 }
 
 .cook-text a button{
@@ -304,7 +311,6 @@ ul li a:hover{
 
 .cook-img img{
     width: 40rem;
-
 }
 
 .cook-text{
@@ -318,16 +324,13 @@ ul li a:hover{
 
 .cook-text a button:hover{
  background-color: white;
-  color:  #df6853;
-  
-      
+  color:  #df6853;     
 }
 .cook-text p{
     font-size: 1.2rem;
     color: #00000080;
     margin-bottom: 3rem;
 }
-
 
 /* EXPERT SECTION */
 .expert{
@@ -364,28 +367,22 @@ ul li a:hover{
     left: 12rem;
 }
 
-.images-text{
-    /* padding-bottom: 200rem; */
-}
-
 .expert{
     position: relative;
 }
 
 .absolute-image{
     position: absolute;
-    left: 55rem;
+    left: 53rem;
     bottom: 32rem;
 }
 
 .absolute-image img{
-    width: 30rem;
+    width: 28rem;
 }
 
 
 /* GALLERY */
-
-
 .gallery-heading{
     text-align: center;
     margin-top: 8rem;
@@ -449,7 +446,7 @@ ul li a:hover{
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     height: 30rem;
-    width: 80rem;
+    width: 77rem;
     position: relative; 
  }
 
@@ -481,9 +478,9 @@ ul li a:hover{
 
 .lettuce{   
     position: absolute;
-    left: 70rem;
+    left: 66rem;
     bottom: 1.8rem;
-    width: 18rem;
+    width: 17rem;
 }
 
  form input{
@@ -513,11 +510,11 @@ form button:hover{
     transform: scale(1.1);
 }
 
-
 /* FOOTER */
 .footer-padding{
     padding: 10rem 2rem 0 2rem;
 }
+
 .footer-container{
     display: flex;
     justify-content: space-evenly;
@@ -526,7 +523,6 @@ form button:hover{
 .footer-text{
     line-height: 1.5;
     margin-right: 15rem;
-
 }
 
 .footer-text .logo{
@@ -545,31 +541,11 @@ form button:hover{
 
 .social-fonts i{
     padding: 0 2rem 0 2rem ;
-    background-color: ghostwhite;
-    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15); 
     border-radius: 50px;
     padding: 0.5rem;
     margin: 0 1rem;
-    
-}
-
-.font-background{
-    width: 2rem;
-    height: 2rem;
-    border-radius: 10rem;
-    box-shadow: 0 10px 9px grey;
-    background-color: white;
-    margin: 0 1rem;
-    border: none;
-
-}
-
-.font-background i{
-    box-shadow: 0 10px 10px grey;
-    background-color: gray;
-    
-    
-
+     box-shadow: 0 10px 10px grey;
+    background-color: white;   
 }
 
 .link li a{
@@ -581,20 +557,17 @@ form button:hover{
 
 .link li a:hover{
     color: #DF6853;
-    text-decoration: underline;
-    
+    text-decoration: underline;    
 }
 
 ul{
     margin-top: 2rem;
-
 }
-
 
 .footer-info{
     border-top: 1px solid #E1E1E1;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     padding: 2rem ;
     margin-top: 5rem;
     font-size: 0.9rem;
@@ -606,8 +579,10 @@ ul{
 
 }
 
-.footer-links a{
-    padding-left: 1rem;
+.footer-links{
+    /* padding-left: 1rem; */
+      /* margin-left: 60rem; */
+    margin-top: 1rem;
 }
 
 .footer-links, .footer-info a:hover{
@@ -615,8 +590,39 @@ ul{
 
 }
 
-@media only screen and (max-width: 992px){
-    
+@media only screen and (max-width: 600px){
+    .hero-text h1{
+      font-size: 3.3rem;
+      line-height: 1.3;
+      text-align: center;
+    }
+   
+    h2{
+    color: red;
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+    font-weight: 100;
+   }
+  
+  h3{
+       font-size: 3rem;
+  }
+
+  h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+  } 
+
+   .hero-text{
+    margin-top: 2rem;
+   }
+
+  .hero-text p{
+    color: grey;
+    font-size: 1.1rem;
+    margin:1em 0;
+}
+
     nav{
         display: flex;
         flex-direction: column;
@@ -629,6 +635,27 @@ ul{
         padding: 2em;
         transition: all 0.5s ease-in-out;
     }
+
+    .buttons a button {
+    width: 4rem;
+    height: 2rem;
+    border-radius: 4rem ;
+    font-size: .8rem;
+    border: 0;
+    cursor: pointer;
+     }
+
+    .other-side .buttons{
+        display: flex;
+    }
+
+    .other-side p a{
+        font-size: .8rem;
+    }
+    
+     .logo img{
+        width: 2.2rem; 
+     }
 
     nav ul{
         display: flex;
@@ -651,6 +678,58 @@ ul{
         display: block;
     }
 
+
+    .hero .padding{
+        padding: 0 2rem;
+    }
+     
+    .hero-button {
+        display: flex;
+    }
+    
+    .hero-button a button{
+      border-radius: 40px;
+      padding: 1em 1.2em;
+      font-size: .8rem;
+      width: 7rem;
+    }
+
+    .hero-img img{
+        margin-top: 3rem;
+        width: 20rem;
+    }
+
+    .float-tag{
+   border: 1px solid white;
+   border-radius: 0.8rem;
+   width: 10rem;
+   height: 5rem;
+   position: absolute;
+   bottom: 45px;
+   left: 40px;  
+   background-color: white;
+   display: flex;
+   column-gap: 10px; 
+   padding: 0.8rem 0.1rem 0.8rem 0.2rem;
+   
+}
+
+.float-tag p{
+    font-size: .7rem;
+    padding-top: .3rem;
+}
+
+.float-tag img{
+    position: relative;
+    width: 5.2rem;
+    height: 4.3rem;
+    border-radius: 8px;
+    bottom: 3.5rem;
+
+}
+    
+   /* FEATURES */
+
     .flex-container{
         flex-direction: column;
     }
@@ -661,40 +740,76 @@ ul{
     }
 
     .features-img{
-        margin-bottom: 9rem;
+        margin-bottom: 7rem;
     }
 
+    /* COOK */
     .cook-container{
         flex-direction: column;
     }
 
-    .expert{
-        display: flex;
-        flex-direction: column;
+    .cook-img img{
+    width: 25rem;
     }
+
+    .cook-text a button{
+        width: 9rem;
+        height: 3rem;
+        font-size: .9rem;
+        border-radius: 5rem;
+    }
+
+     /* EXPERT */
+     .expert{
+        margin-top: 2rem;
+     }
+    .expert .padding-container{
+        padding: 0 2rem;
+
+    }
+    .expert .padding-container .heading h3{
+        text-align: center;
+        font-size: 2.6rem;  
+     }
 
     .expert-card{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
-
+     
     .expert{
-        position: relative;
+    position: relative;
     }
 
+   .absolute-image{
+    position: absolute;
+    left: 25rem;
+    bottom: 36rem;
+   }
+          
     .absolute-image img{
         position: absolute;
-        right: 6rem;
-        top: -75rem;
-        width: 15rem;
+        right: 3rem;
+        top: -78rem;
+        width: 14rem;
     }
+
       /*gallery  */
+      .gallery-heading h3{
+        font-size: 2.6rem;
+      }
+    
+      .gallery-padding{
+        padding: 0 2rem;
+      }
+
     .gallery-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 250px);
-        gap: 10px;
-        margin-top: 5rem; 
+        grid-template-rows: repeat(3, 120px);
+        gap: 5px;
+        margin-top: 4rem; 
      }
      
      .gallery-container img{
@@ -704,35 +819,44 @@ ul{
          border-radius: 2rem;
      }
     
-
+       /* NEWSLETTER */
     .newsletter-background{
         background-color: #DF6853;
-        border-top-right-radius: 12rem;
-        border-top-left-radius: 1.5rem;
-        border-bottom-left-radius: 1.5rem;
-        border-bottom-right-radius: 1.5rem;
-        height: 25rem;
-        width: 46rem;
+        border-top-right-radius: 10rem;
+        border-top-left-radius: 1.2rem;
+        border-bottom-left-radius: 1.2rem;
+        border-bottom-right-radius: 1.2rem;
+        height: 18rem;
+        width: 20.5rem;
         position: relative; 
      }
-
-     .newsletter-heading h5{
-        font-size: 2rem;
+     
+     .newsletter-padding{
+        padding: 0 2rem;
      }
     
-    
-     .newsletter-image{
-        position: absolute;
-        bottom: 9rem;
-        right: 10rem;
-        width: 2rem;
+    .newsletter-heading{
+    padding-top: 4rem;
+    padding-left: 2rem;
+    line-height: 1.5;
+    color: white;
+    }
+
+    .newsletter-heading p{
+    font-size: 1.2em;
+    }
+
+     .newsletter-heading h5{
+        font-size: 1.3rem;
      }
 
      .newsletter-image img{
-        width: 20rem;    
+        width: 13rem;
+        position: absolute;  
+        right: 30rem;  
+        bottom: 8rem;
      }
     
-
     .news-image{
         position: absolute;
         right: -5rem;
@@ -744,112 +868,92 @@ ul{
         left: 50rem;
      }
     
-     .yellow{ 
+      .yellow{ 
         position: absolute;
         right: -5rem;
-        bottom: 3rem;
-        left: 23rem;
-        width: 3rem;
+        bottom: 1.8rem;
+        left: 10rem;
+        width: 1.8rem;
      }
      .onion{
         position: absolute;
         right: -5rem; 
-        left: 25rem; 
-        bottom: -4rem;
-        width: 12rem;  
+        left: 10rem; 
+        bottom: -3rem;
+        width: 8.5rem;  
      }
     
      .blue{  
         position: absolute;
-        left: 40rem;
-        bottom: 5rem;
+        left: 16rem;
+        bottom: 2.8rem;
+        width: 1.3rem;
      }
     
     .lettuce{   
         position: absolute;
-        left: 38rem;
-        bottom: 5rem;
-        width: 15rem;
+        left: 12.8rem;
+        bottom: 3.8rem;
+        width: 12rem;
     }
-
+    
     form input{
         border-radius: 10rem;
         border: none;
         height: 4rem;
-        width: 28rem;
+        width: 15rem;
         position: relative;
     }
     
      form button{
-        padding:0.8rem;
+        padding: 1rem;
         border-radius: 50%;
         position: absolute;
-        left: 32rem;
-        top: 12.2rem;        
+        left: 13.9rem;
+        top: 9.9rem;        
+     }
+
+     form button i{
+          color: white;
      }
 
     form button:hover{
         transform: scale(1.2);
     }
     
-    
-
       /* footer */
      .footer-container{
      display: block;
-
-
      }
 
     .footer-text{
         line-height: 1.5;
-        
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
+        width: 100vw;
     }
     
     .footer-text .logo{
-        margin-bottom: 1rem;
-    
+        margin-bottom: 1rem;  
     }
+
     .footer-text p{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     
     .social-fonts{
-        padding: 4rem 2rem 0 2rem ;
-        display: flex;
-        
+        padding: 4rem 0 5rem 0 ;
+        display: flex;   
     }
     
     .social-fonts i{
         padding: 0 2rem 0 2rem ;
         background-color: ghostwhite;
-        box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15); 
+        box-shadow: 0 10px 10px grey;
         border-radius: 50px;
         padding: 0.5rem;
-        margin: 0 1rem;
-        
+        margin: 0 1rem;   
     }
-    
-    .font-background{
-        width: 2rem;
-        height: 2rem;
-        border-radius: 10rem;
-        box-shadow: 0 10px 9px grey;
-        background-color: white;
-        margin: 0 1rem;
-        border: none;
-    
-    }
-    
-    .font-background i{
-        box-shadow: 0 10px 10px grey;
-        background-color: gray;
-        
-        
-    
-    }
-    
+
     .link li a{
         font-size: 1rem;
         color: grey;
@@ -860,42 +964,30 @@ ul{
     .link li a:hover{
         color: #DF6853;
         text-decoration: underline;
-        
     }
     
     ul{
-        margin-top: 2rem;
-    
+        margin-top: 2rem; 
     }
         
     .footer-info{
         border-top: 1px solid #E1E1E1;
+        margin-top: 3rem;
         display: flex;
-        justify-content: space-between;
-        padding: 2rem;
-        margin-top: 5rem;
-        font-size: 0.9rem;
-    }
-    
-    .footer-links, .footer-info a{
-        text-decoration: none;
-        color: black;
-    
+        justify-content: ;
+        padding: 2rem;   
+        font-size: .8rem;
     }
     
     .footer-links {
-        margin-right: 1rem;
-        line-height: 2;
         text-align: center;
+        margin-top: 1.5rem;
     }
-    
     
     .footer-info p{
         text-align: center;
-        padding-right: 7rem;
     }
     
-
 }
 
 
