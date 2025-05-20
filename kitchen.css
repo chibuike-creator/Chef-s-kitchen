@@ -592,11 +592,18 @@ ul{
 
 @media only screen and (max-width: 600px){
     header{
-        height: 10rem;
+        height: 8rem;
+        display: block;
+    }
+
+    header .logo{
+        text-align: center;
     }
     
     header .logo h1{
         font-size: 1.5rem;
+        padding-bottom: 1rem;
+        
     }
 
    header .logo img{
